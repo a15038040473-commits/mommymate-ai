@@ -1,0 +1,20 @@
+# Node
+node_modules/
+dist/
+.env
+.env.local
+.env.production.local
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+*.egg-info/
+
+# Data (不上传 AI 生成的缓存，避免泄露)
+backend/data/*.json
+
+# OS
+.DS_Store
+Thumbs.db

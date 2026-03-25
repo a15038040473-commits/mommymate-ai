@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    min-height: max(884px, 100dvh);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .storybook-shadow {
+    box-shadow: 0 8px 16px -4px rgba(20, 29, 33, 0.08);
+  }
+  .glass-nav {
+    backdrop-filter: blur(20px);
+  }
+}

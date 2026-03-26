@@ -107,7 +107,7 @@ export default function MonthSwitch() {
   const getTotalWeek = (currMonth: number, weekInMonth: number) =>
     (currMonth - 1) * 4 + weekInMonth;
 
-  const sop = getWeekSOP(getTotalWeek(activeCurriculumMonth, expandedWeek));
+
 
   const handleSwitchToWeek = () => {
     const tw = getTotalWeek(activeCurriculumMonth, expandedWeek);

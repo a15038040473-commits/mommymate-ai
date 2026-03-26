@@ -12,8 +12,8 @@ ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
+    allow_origins=["*"],           # NOTE: 无认证场景，直接允许所有来源
+    allow_credentials=False,       # NOTE: credentials=True 与通配符冲突，必须为 False
     allow_methods=["*"],
     allow_headers=["*"],
 )
